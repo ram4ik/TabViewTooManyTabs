@@ -10,7 +10,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        TabView {
+            
+            Text("Call Screen").tabItem {
+                Image(systemName: "phone")
+                Text("Call")
+            }
+            Text("Outgoing Screen").tabItem {
+                Image(systemName: "phone.arrow.up.right")
+                Text("Outgoing")
+            }
+            Text("Incoming Screen").tabItem {
+                Image(systemName: "phone.arrow.down.left")
+                Text("Incoming")
+            }
+            Text("Phone Book Screen").tabItem {
+                Image(systemName: "book")
+                Text("Phone Book")
+            }
+            Text("History Screen").tabItem {
+                Image(systemName: "clock")
+                Text("History")
+            }
+            Text("New Screen").tabItem {
+                Image(systemName: "phone.badge.plus")
+                Text("New")
+            }
+        }
     }
 }
 
